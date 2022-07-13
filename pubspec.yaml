@@ -1,0 +1,57 @@
+name: ako_demo
+description: A new Flutter project.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_phoenix: ^1.0.0
+  get: ^4.6.5
+  fluttertoast:
+  sa3_liquid: ^1.0.1
+  parallax_image: ^0.3.1+1
+  http: ^0.13.4
+  get_storage:
+  window_manager: ^0.2.5
+  google_fonts: ^3.0.1
+  msix: ^2.8.18
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - Assets/logo.jpg
+    - Assets/1.jpg
+    - Assets/2.jpg
+    - Assets/3.jpg
+    - Assets/4.jpg
+    - Assets/5.jpeg
+
+
+msix_config:
+  display_name: AKO NEWS
+  publisher_display_name: Ali Sinaee
+  identity_name: company.suite.alisinaee
+  msix_version: 1.0.0.0
+  #logo_path: C:\path\to\logo.png
+  capabilities: internetClient
+  certificate_path: C:\Users\ali\Desktop\WORKS\save files\certificates\alisinaee.pfx
+  certificate_password: 2675299
+
+
+
