@@ -66,7 +66,9 @@ class AuthController extends GetxController {
               date: news.results![index].pubDate!,
               imgUrl: news.results![index].imageUrl,
               title: news.results![index].title!,
-              description: news.results![index].description!,
+              description: news.results![index].description != null
+                  ? news.results![index].description!
+                  : FakeData.leremText,
             ),
           );
         }
